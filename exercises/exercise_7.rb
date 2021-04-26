@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+resp = gets.chomp
+
+s5 = Store.create(name: resp)
+puts s5.errors[:annual_revenue]
+puts s5.errors[:name]
+# puts s5.errors[:annual_revenue]
+
+pp Store.all
